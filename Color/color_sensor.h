@@ -16,15 +16,20 @@
 #ifndef COLOR_SENSOR_H_
 #define COLOR_SENSOR_H_
 
+#include "stm32f1xx_hal.h"  /* STM32F103 HAL library */
+
 /*******************************************************************************
 *                                Definitions                                  *
 *******************************************************************************/
 
+/*
 #define COLOR_SENSOR_PORT (GPIOB)
 #define COLOR_SENSOR_PIN (GPIO_PIN_0)
+*/
 
 #define COLOR_SENSOR_ADC_CHANNEL (ADC_CHANNEL_8)  /* PB0 -> ADC12_IN8 */
 #define COLOR_SENSOR_ADC_RESOLUTION (4095)        /* 12-bit ADC */
+#define COLOR_SENSOR_MAX_VALUE  (4095)            /* 12-bit ADC full-scale value */
 
 /*******************************************************************************
 *                      Functions Prototypes                                   *
