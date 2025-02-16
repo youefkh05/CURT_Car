@@ -1,11 +1,11 @@
-/*
-* Module : Color Sensor
-*
-* File Name : color_sensor.c
-*
-* Author : al-sakka
-*
-*/
+/**
+ * Module : Color Sensor
+ *
+ * File Name : color_sensor.c
+ *
+ * Author : al-sakka
+ *
+ */
 
 #include "color_sensor.h"
 
@@ -23,7 +23,7 @@ void COLOR_SENSOR_Init(ADC_HandleTypeDef *hadc)
 
     sConfig.Channel = COLOR_SENSOR_ADC_CHANNEL;
     sConfig.Rank = ADC_REGULAR_RANK_1;
-    sConfig.SamplingTime = ADC_SAMPLETIME_71CYCLES_5;  // Suitable for STM32F103C8T6
+    sConfig.SamplingTime = ADC_SAMPLETIME_71CYCLES_5;
 
     HAL_ADC_ConfigChannel(hadc, &sConfig);
 }
